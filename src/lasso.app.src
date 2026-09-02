@@ -1,0 +1,13 @@
+{application, lasso, [
+    {description, "A purely-functional rope data structure for text editors"},
+    {vsn, "0.1.0"},
+    {registered, []},
+    {applications, [
+        kernel,
+        stdlib
+    ]},
+    {env, []},
+    {modules, []},
+    {licenses, ["GPL-3.0-or-later"]},
+    {links, [{"Source", "https://git.sr.ht/~takeiteasy/cowboy"}]}
+ ]}.
