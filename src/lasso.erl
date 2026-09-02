@@ -134,7 +134,7 @@ sub_binary(T, Index, Len) -> to_binary(slice(T, Index, Len)).
 %%
 %% NOTE: this addresses a single codepoint, not a grapheme cluster - a
 %% combining mark or emoji ZWJ sequence spans several indices.  Grapheme-aware
-%% cursor movement is a separate layer (see TICKETS.md).
+%% cursor movement is a separate layer, not yet implemented.
 -spec at(rope(), non_neg_integer()) -> char().
 at(T, Index) ->
     <<Cp/utf8, _/binary>> = sub_binary(T, Index, 1),

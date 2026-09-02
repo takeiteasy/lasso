@@ -21,7 +21,7 @@ R2 = lasso:insert(R, 6, <<"there ">>),
 
 Milestone 1 - the immutable core and the line-aware API. Grapheme-cluster
 movement, streaming/iteration and a stateful buffer process are planned; see
-[TICKETS.md](TICKETS.md).
+the [tracker](https://todo.sr.ht/~takeiteasy/lasso).
 
 ## Documentation
 
