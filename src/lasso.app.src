@@ -9,5 +9,5 @@
     {env, []},
     {modules, []},
     {licenses, ["GPL-3.0-or-later"]},
-    {links, [{"Source", "https://git.sr.ht/~takeiteasy/cowboy"}]}
+    {links, [{"Source", "https://git.sr.ht/~takeiteasy/lasso"}]}
  ]}.
