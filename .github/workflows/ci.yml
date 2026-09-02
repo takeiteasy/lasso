@@ -1,0 +1,29 @@
+name: ci
+
+on:
+  push:
+    branches: [trunk]
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: erlef/setup-beam@v1
+        with:
+          otp-version: '29'
+          rebar3-version: '3.27'
+
+      - name: EUnit
+        run: rebar3 eunit
+
+      - name: PropEr
+        run: rebar3 proper
+
+      - name: Xref
+        run: rebar3 xref
+
+      - name: Dialyzer
+        run: rebar3 dialyzer
